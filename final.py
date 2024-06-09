@@ -13,8 +13,7 @@ import os
 load_dotenv()
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'uploads'
-os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
+
 
 # Initialize in-memory vector store
 vectorstore = None
